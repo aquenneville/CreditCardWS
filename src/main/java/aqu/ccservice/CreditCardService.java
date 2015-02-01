@@ -12,8 +12,8 @@ import java.util.List;
 
 /**
  * Class facade for the Credit card service:
- * reads a csv file to fetch the credit cards
- * sorts them in the descending order 
+ * reads a csv file to fetch the credit card information (bank name, cc number, expiry date) and
+ * sorts by expiry in descending order 
  * 
  * @author aqu
  */
@@ -78,7 +78,6 @@ public class CreditCardService {
 				System.out.println(cc.toString());
 			}
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
