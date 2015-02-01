@@ -1,7 +1,7 @@
 package aqu.ccservice;
 
 /**
- * Creation card creation exception when 
+ * Creation card creation exception 
  * 
  * @author 
  * aqu
