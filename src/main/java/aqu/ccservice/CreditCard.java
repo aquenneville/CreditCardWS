@@ -9,7 +9,8 @@ import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
 /**
- * Immutable class representation of a Credit card. 
+ * Class representation of a Credit card with 
+ * Builder class
  * 
  * @author 
  * aqu
@@ -26,10 +27,10 @@ public class CreditCard {
 	private CreditCard() {
 	}
 
-	private CreditCard(Builder ccb) {
-		this.bankName = ccb.bankName;
-		this.creditCardNumber = ccb.creditCardNumber;
-		this.expiryDate = ccb.expiryDate;
+	private CreditCard(Builder builder) {
+		this.bankName = builder.bankName;
+		this.creditCardNumber = builder.creditCardNumber;
+		this.expiryDate = builder.expiryDate;
 	}
 	
 	public String getBankName() {
@@ -143,7 +144,4 @@ public class CreditCard {
 				.toString();
 	}
 	
-	public static void main(String[] args) throws CreditCardCreationException {
-		CreditCard cc = new CreditCard.Builder().setBankName("").setCreditCardNumber("").setExpiryDate("").build();
-	}
 }
