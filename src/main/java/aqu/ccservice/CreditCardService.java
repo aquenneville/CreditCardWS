@@ -15,6 +15,9 @@ import java.util.List;
  * reads a csv file to fetch the credit card information (bank name, cc number, expiry date) and
  * sorts by expiry in descending order 
  * 
+ * The service adds to the list of credi cards the Credit Cards objects returned by the Builder.
+ * In case of an Exception the line number of the CSV file is added to the list fileLineErrors.
+ * 
  * @author aqu
  */
 public class CreditCardService {
